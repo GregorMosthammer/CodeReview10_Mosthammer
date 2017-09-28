@@ -71,6 +71,9 @@
     echo "<div class=\"row\" >";
       while ($row != NULL){
       
+//to show the products
+
+
         $productId = $row['productId'];
 
                   
@@ -101,6 +104,10 @@ echo "</div>";
             ?>
 
 <script>
+            /* 
+                function to put into the card
+            */
+
             $(document).ready(function(){
             $(".add").click(function(){
 

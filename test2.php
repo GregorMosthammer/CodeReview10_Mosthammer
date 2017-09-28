@@ -14,7 +14,8 @@ $sql = "SELECT * FROM cart,products WHERE cart.userId = $test AND products.produ
 if (mysqli_query($conn, $sql)) {
 	$result = mysqli_query($conn, $sql);
 	// $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-	$resultString = " ";
+	
+	//$resultString = " ";
 	while ($row = mysqli_fetch_assoc($result)) {
 		// var_dump($row);
 
@@ -23,11 +24,10 @@ if (mysqli_query($conn, $sql)) {
     echo "<img class=\"img-responsive\" src=\"".$row['productImg'] ."\">" . "<br>";
 
     //$resultString +=  "<div>" . $row['productName'] . "</div>";
-   // $resultString +=  "<p>"  . $row['productPrice'] . "</p>";
+    //$resultString +=  "<p>"  . $row['productPrice'] . "</p>";
     //$resultString +=  "<img class=\"img-responsive\" src=\"".$row['productImg'] ."\">" . "<br>";
 }
 
-echo $resultString;
 
 
 
